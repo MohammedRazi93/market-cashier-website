@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register Manager</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section class="section">
+        <h1>Cash Register Manager</h1>
+        <p>Enter the bill amount and cash given by customer</p>
+        <div class="flex">
+            <div class="billAmount">
+                <div class="label">Bill Amount:</div>
+                <input type="number" id="billAmt" > 
+                <!-- <button id="nextBtn">Next</button>  -->
+            </div>
+    
+            <div class="cashGivenInput">
+                <div class="label">Cash Given:</div>
+                <input type="number" id="cashGiven" >
+            </div>
+        </div>
+        <button id="checkBtn">Check</button> 
+        <div class="errorMsg"></div>
+
+        <div class="changeReturn">
+            <div class="label">Return Change:</div>
+            <div id="output">
+                <table>
+                    <tr>
+                    <th>No.of Notes</td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    <td class="noOfNotes"></td>
+                    </tr>
+                    <tr>
+                    <th>Note</td>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>50</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>1</td>
+                    </tr>
+                </table>
+                <div class="label" ><h1>Balance : <span id="bal"></span></h1></div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>

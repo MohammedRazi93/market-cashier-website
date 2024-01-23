@@ -1,0 +1,132 @@
+:root{
+    --dark-green : #0f1f49d7;
+    --faint-green: #c5c0e2;
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(45deg, #c44f35, #140b63, #6458c0, #60c272);
+    background-size: 400% 400%;
+    animation: gradientChange 8s linear infinite;
+}
+
+@keyframes gradientChange {
+    0% {
+        background-position: 0% 50%;
+    }
+    25%{
+        background-position: 50% 25%;
+    }
+    50% {
+        background-position: 50% 70%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+  
+.flex{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+section{
+
+    width: 100%;
+    max-width: 500px;
+    min-height: 200px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    background-color: var(--dark-green);
+    border-radius: 7px;
+    box-shadow: 20px 25px 20px #0000004a;
+}
+h1{
+    padding-top: 20px;
+}
+h1, p{
+    color: white;
+}
+.label{
+    font-size: 1.3rem;
+    padding: 1.5rem 1rem 0.5rem;
+    color: var(--faint-green);
+}
+
+.label h1{
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 1.5rem 1rem 0.5rem;
+    color: var(--faint-green);
+}
+
+
+input{
+    width: 100%;
+    padding: 1rem;
+    height: 40px;
+    display: block;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+input:focus{
+    outline: 2px solid rgba(0, 0, 0, 0.76);
+}
+
+button{
+    padding: 0.5rem 1rem;
+    display: block;
+    font-size: 1rem;
+    border: none;
+    margin: 1rem auto 0;
+    background-color:var(--faint-green);
+    color: var(--dark-green);
+    font-weight: bold;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 40%;
+    height: auto;
+}
+
+    
+.changeReturn{
+    display: none;
+}
+.errorMsg {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: orange;
+}
+#output{
+    margin: 1rem 0;    
+}
+
+#output table, th, td{
+    padding: 0.2rem;
+    color: var(--dark-green);
+    background-color:var(--faint-green);
+    border: 2px solid var(--dark-green) ;
+    border-collapse: collapse;
+}
+.noOfNotes{
+    background-color:white;
+    font-weight: bold;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+}
+
+th,td{
+    word-wrap: break-word;
+}
